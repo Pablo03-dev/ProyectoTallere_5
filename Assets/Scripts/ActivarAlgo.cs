@@ -6,9 +6,11 @@ using UnityEngine.Events;
 public class ActivarAlgo : MonoBehaviour
 {
     [SerializeField] private UnityEvent Presionado;
+    [SerializeField] private UnityEvent Suelto;
 
     [Header("Keybinds")]
     public KeyCode ActivarKey = KeyCode.T;
+    public KeyCode DesactivarKey = KeyCode.G;
 
 
 
@@ -18,6 +20,12 @@ public class ActivarAlgo : MonoBehaviour
         {
             Presionado?.Invoke();
         }
+
+        if (Input.GetKey(DesactivarKey))
+        {
+            Suelto?.Invoke();
+        }
+       
     }
 
     
