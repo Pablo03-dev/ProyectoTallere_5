@@ -10,13 +10,17 @@ public class ActivarAlgo : MonoBehaviour
     [Header("Keybinds")]
     public KeyCode ActivarKey = KeyCode.T;
 
-    private void Comandos()
+
+
+    private void Update()
     {
         if (Input.GetKey(ActivarKey))
         {
             Presionado?.Invoke();
         }
     }
+
+    
   
 
     //private void OnTriggerEnter(Collider other)
