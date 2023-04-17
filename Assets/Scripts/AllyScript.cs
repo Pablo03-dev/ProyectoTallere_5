@@ -89,14 +89,16 @@ public class AllyScript : MonoBehaviour
     {
         //asegurarse que el aliado no se mueva
         agent.SetDestination(transform.position);
+        //Vector3 aux = new Vector3(enemy.rotation.x, transform.rotation.y, enemy.rotation.z);
+        //Vector3 aux = new Vector3(transform.rotation.y, enemy.rotation.x, enemy.rotation.z); 
         transform.LookAt(enemy);
 
         if (!alreadyAttacked)
         {
             //Attack code aqui
             Rigidbody rb = Instantiate(proyectile, AtackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 30f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 2f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
