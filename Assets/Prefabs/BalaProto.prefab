@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5308581199795059299}
   - component: {fileID: 7539466349617957042}
   - component: {fileID: 7760292881437568181}
+  - component: {fileID: -2351161694250391683}
   m_Layer: 0
   m_Name: BalaProto
   m_TagString: Untagged
@@ -114,3 +115,16 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &-2351161694250391683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146628453938512670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd34aec59ed9be74ab3ecbcf042731fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChange: -1
