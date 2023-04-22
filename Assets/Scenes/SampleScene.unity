@@ -34456,6 +34456,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1290590062}
+  - {fileID: 1279289747}
   - {fileID: 1016817478}
   m_Father: {fileID: 1088626202}
   m_RootOrder: 0
@@ -35941,7 +35942,7 @@ Transform:
   m_Children:
   - {fileID: 235552383}
   m_Father: {fileID: 963194228}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1019970712
 Mesh:
@@ -47574,6 +47575,7 @@ GameObject:
   - component: {fileID: 1279289750}
   - component: {fileID: 1279289749}
   - component: {fileID: 1279289748}
+  - component: {fileID: 1279289752}
   m_Layer: 0
   m_Name: Granada
   m_TagString: Untagged
@@ -47588,15 +47590,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279289746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.145, y: 0.227, z: -0.783}
-  m_LocalScale: {x: 0.28405, y: 0.28405, z: 0.28405}
+  m_LocalRotation: {x: -0.027187776, y: -0.9489073, z: -0.08525669, w: -0.3026006}
+  m_LocalPosition: {x: -0.06712964, y: -0.4050995, z: 0.031480186}
+  m_LocalScale: {x: 0.2840499, y: 0.28405002, z: 0.28404993}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1041973036}
   - {fileID: 1423406204}
-  m_Father: {fileID: 1754259049}
-  m_RootOrder: 3
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1279289748
 MonoBehaviour:
@@ -47605,7 +47607,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279289746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8c09f190e472eb449c235ca695cf16a, type: 3}
   m_Name: 
@@ -47681,6 +47683,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279289746}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1279289752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279289746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f823571ee4dbcf4489b5388afe1d1b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4146628453938512670, guid: 2d2e9814220c9c748a50048ef40ac244, type: 3}
+  shootForce: 16
+  upwardForce: 12
+  timeBetweenShooting: 1
+  spread: 0
+  reloadTime: 2
+  timeBetweenShots: 1
+  magazineSize: 7
+  bulletsPerTap: 1
+  allowButtonHold: 1
+  fpsCam: {fileID: 963194227}
+  attackPoint: {fileID: 1041973036}
+  allowInvoke: 1
+  ammoDisplay: {fileID: 2040536561}
 --- !u!1 &1290590061
 GameObject:
   m_ObjectHideFlags: 0
@@ -50705,7 +50733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1423406204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61625,7 +61653,6 @@ Transform:
   - {fileID: 1581520596}
   - {fileID: 2495967}
   - {fileID: 1224628347}
-  - {fileID: 1279289747}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72290,7 +72317,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040536559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72299,7 +72326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 614, y: -424}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040536561
@@ -72331,8 +72358,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278782434
+  m_fontColor: {r: 0.8867924, g: 0.03681021, b: 0.03681021, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
