@@ -1,6 +1,7 @@
   using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ThrowSystem : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class ThrowSystem : MonoBehaviour
 
     bool readyToThrow;
 
+    public TextMeshProUGUI ammoDisplay;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -33,6 +36,9 @@ public class ThrowSystem : MonoBehaviour
         {
             Throw();
         }
+
+        //if (ammoDisplay != null)
+        //    ammoDisplay.SetText(totalThrows);
     }
 
     private void Throw()
