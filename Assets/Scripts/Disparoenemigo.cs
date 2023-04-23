@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ModifyHpZone : MonoBehaviour
+public class Disparoenemigo : MonoBehaviour
 {
     public int daño;
+    //public float tiempoVida;
 
     // Start is called before the first frame update
     void Start()
@@ -17,22 +18,18 @@ public class ModifyHpZone : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            //GameManager.manager.QuitarVidas(daño);
-            //Audiomanager.PlaySound("HuidaPanda");
-            //CameraShake.instance.StartShake(0.1f, 0.1f);
-            //Destroy();
-        }
-    }
+   
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.manager.QuitarVidas(daño);
+        }
+
+        if (collision.gameObject.tag == "Piso")
+        {
+            //gameObject.SetActive(false);
         }
     }
 }

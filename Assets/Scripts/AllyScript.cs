@@ -98,7 +98,7 @@ public class AllyScript : MonoBehaviour
             //Attack code aqui
             Rigidbody rb = Instantiate(proyectile, AtackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 30f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 2f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 1f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

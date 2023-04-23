@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Pool;
 
 public class ShootSystem : MonoBehaviour
 {
+    //public Balaplayer bullet;
+
     public GameObject bullet;
     public float shootForce, upwardForce;
 
@@ -23,8 +26,29 @@ public class ShootSystem : MonoBehaviour
 
     //Graphics
     //public GameObject muzzleFlash;
-    public TextMeshProUGUI ammoDisplay; 
+    public TextMeshProUGUI ammoDisplay;
 
+    //private ObjectPool<Balaplayer> bulletPool;
+
+    private void Start()
+    {
+        //bulletPool = new ObjectPool<Balaplayer>(() =>
+        //{
+        //    Balaplayer bala = Instantiate(bullet, attackPoint.position, attackPoint.rotation);
+        //    bala.DesactivarBala(DesactivarBalaPool);
+        //    return bala;
+        //}, bala =>
+        //{
+        //    bala.transform.position = attackPoint.position;
+        //    bala.gameObject.SetActive(true);
+        //}, bala =>
+        //{
+        //    bala.gameObject.SetActive(false);
+        //}, bala =>
+        //{
+        //    Destroy(bala.gameObject);
+        //}, true, 5, 10);
+    }
 
     private void Awake()
     {
@@ -62,6 +86,8 @@ public class ShootSystem : MonoBehaviour
 
     private void Shoot()
     {
+        //bulletPool.Get();
+
         readyToShoot = false;
 
         Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
@@ -81,9 +107,11 @@ public class ShootSystem : MonoBehaviour
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
 
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+        
 
         currentBullet.transform.forward = directionWithSpread.normalized;
 
+        
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
 
         //Granadas
@@ -105,6 +133,11 @@ public class ShootSystem : MonoBehaviour
         if (bulletsShot < bulletsPerTap && bulletsLeft > 0)
             Invoke("Shoot", timeBetweenShots);
     }
+
+    //private void DesactivarBalaPool(Balaplayer bala)
+    //{
+    //    bulletPool.Release(bala);
+    //}
 
     private void ResetShot()
     {

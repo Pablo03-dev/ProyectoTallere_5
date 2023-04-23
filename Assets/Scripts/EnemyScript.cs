@@ -8,7 +8,7 @@ public class EnemyScript : MonoBehaviour
     public NavMeshAgent agent;
 
     public Transform player;
-    public int healt;
+    //public int healt;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -21,6 +21,8 @@ public class EnemyScript : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public GameObject proyectile;
+
+    public Transform AttackPoint;
 
     //States
     public float sightRange, attackRange;
@@ -93,9 +95,9 @@ public class EnemyScript : MonoBehaviour
         if (!alreadyAttacked)
         {
             //Attack code aqui
-            Rigidbody rb = Instantiate(proyectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(proyectile, AttackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 1f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -110,9 +112,9 @@ public class EnemyScript : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        healt -= damage;
+        //healt -= damage;
 
-        if (healt <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        //if (healt <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
 
     public void DestroyEnemy()
