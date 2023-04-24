@@ -26927,8 +26927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 724412877}
-  colorA: {r: 0, g: 0, b: 0, a: 1}
-  colorB: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 0}
+  colorA: {r: 0, g: 0, b: 0, a: 0.9019608}
+  colorB: {r: 0, g: 0, b: 0, a: 0.3137255}
   transparencia: 0
   transitionSpeed: 0
   panelPistola: {fileID: 0}
@@ -49299,8 +49299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1284083625}
-  colorA: {r: 0, g: 0, b: 0, a: 1}
-  colorB: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 0}
+  colorA: {r: 0, g: 0, b: 0, a: 0.9019608}
+  colorB: {r: 0, g: 0, b: 0, a: 0.3137255}
   transparencia: 0
   transitionSpeed: 0
   panelPistola: {fileID: 1284083627}
@@ -50046,8 +50046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1303579023}
-  colorA: {r: 0, g: 0, b: 0, a: 1}
-  colorB: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 0}
+  colorA: {r: 0, g: 0, b: 0, a: 0.9019608}
+  colorB: {r: 0, g: 0, b: 0, a: 0.3137255}
   transparencia: 0
   transitionSpeed: 0
   panelPistola: {fileID: 0}
