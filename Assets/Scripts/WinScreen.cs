@@ -5,15 +5,15 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class GameoverScreen : MonoBehaviour
+public class WinScreen : MonoBehaviour
 {
-    public TMP_Text pointsText;
+    //public TMP_Text pointsText;
     private bool JuegoPausado = false;
 
     public void Setup(int score)
     {
         gameObject.SetActive(true);
-        pointsText.text = "Score: " + score.ToString();
+        //pointsText.text = "Score: " + score.ToString();
 
         JuegoPausado = true;
         Pausa();
@@ -37,18 +37,4 @@ public class GameoverScreen : MonoBehaviour
         SceneManager.LoadScene(escena);
         Time.timeScale = 1f;
     }
-
-    //private void Update()
-    //{
-    //    if (juegoPausado)
-    //    {
-    //        Pausa();
-    //    }
-    //}
-    //public void Pausa()
-    //{
-    //    Time.timeScale = 0f;
-    //    juegoPausado = true;
-        
-    //}
 }

@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     //public float timer = 10;
     //private bool juegoPausado = false;
 
+    public WinScreen WinEndScreen;
     public GameoverScreen GameOverScreen;
 
 
@@ -48,7 +49,8 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-
+        print("WinGame");
+        WinEndScreen.Setup(score);
     }
 
     public void ResetearJuego()
@@ -66,6 +68,14 @@ public class GameManager : MonoBehaviour
             GameOver();
             //Over.Show();
         }
+    }
+
+    public void RestaurarHp(int sanar)
+    {
+        //GameManager.manager.RestaurarVidas();
+
+        vidas -= sanar;
+        barrahp.value = vidas;
     }
 
     //void UpdatedScore()
