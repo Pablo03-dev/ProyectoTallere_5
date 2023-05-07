@@ -7,6 +7,7 @@ TagManager:
   - Piso
   - Melee
   - Enemigo
+  - Bala
   layers:
   - Default
   - TransparentFX

@@ -24,6 +24,10 @@ public class ShootSystem : MonoBehaviour
 
     public bool allowInvoke = true;
 
+    //Recoil
+    public Rigidbody playerrb;
+    public float recoilForece;
+
     //Graphics
     //public GameObject muzzleFlash;
     public TextMeshProUGUI ammoDisplay;
@@ -117,6 +121,8 @@ public class ShootSystem : MonoBehaviour
         //Granadas
         currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
 
+        
+
         //Instacia flash si es que tiene
         //if (muzzleFlash)
             //Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
@@ -128,6 +134,9 @@ public class ShootSystem : MonoBehaviour
         {
             Invoke("ResetShot", timeBetweenShooting);
             allowInvoke = false;
+
+            //Add recoil to the player
+            playerrb.AddForce(-directionWithSpread.normalized * recoilForece, ForceMode.Impulse);
         }
 
         if (bulletsShot < bulletsPerTap && bulletsLeft > 0)

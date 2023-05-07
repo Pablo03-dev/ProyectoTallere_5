@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5871481991757489275}
   m_Layer: 0
   m_Name: BalaPLayerpool
-  m_TagString: Untagged
+  m_TagString: Bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b87cbe502775c94dafa869a6fb94d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
-  "da\xF1o": 2
-  tiempoDeVida: 2
