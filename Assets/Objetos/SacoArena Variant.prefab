@@ -12,12 +12,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 65.42121
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75.908394
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.6630344
+      value: 8.5339
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95816493
+      value: -0.65931
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57,7 +65,29 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1ee40363dcc12d749b03668ec2b8f5bf, type: 2}
     - target: {fileID: 919132149155446097, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
       propertyPath: m_Name
-      value: SacoArena
+      value: SacoArena Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
+--- !u!1 &7331077619872515699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a4102f92b17336549a7790a22ec6e739, type: 3}
+  m_PrefabInstance: {fileID: 7601039954530827042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6294266976056125233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331077619872515699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014263952, y: 0.0684734, z: 0.02456951}
+  m_Center: {x: 0.03279066, y: 0.0023725755, z: 0.012404944}
