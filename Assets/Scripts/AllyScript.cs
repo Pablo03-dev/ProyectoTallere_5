@@ -29,7 +29,7 @@ public class AllyScript : MonoBehaviour
 
     private void Awake()
     {
-        enemy = GameObject.Find("Enemy").transform;
+        enemy = GameObject.FindGameObjectWithTag("Enemigo").transform; //Cambiar a Tag
         agent = GetComponent<NavMeshAgent>();
     }
 
