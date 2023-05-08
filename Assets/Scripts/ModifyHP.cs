@@ -26,5 +26,11 @@ public class ModifyHP : MonoBehaviour
 			//	Destroy(this.gameObject);
 			//}
 		}
+
+        if (colliderData.gameObject.tag == "Piso")
+        {
+            Destroy(gameObject);
+        }
+
 	}
 }
