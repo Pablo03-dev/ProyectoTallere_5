@@ -22,6 +22,10 @@ public class EnemyScript : MonoBehaviour
     bool alreadyAttacked;
     public GameObject proyectile;
 
+    //32 en enemigos comunes
+    public float upwardForce;
+    public float shootForce;
+
     public Transform AttackPoint;
 
     //States
@@ -96,11 +100,17 @@ public class EnemyScript : MonoBehaviour
         {
             //Attack code aqui
             Rigidbody rb = Instantiate(proyectile, AttackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * shootForce, ForceMode.Impulse);
             rb.AddForce(transform.up * 1f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+
+            //Granadas
+            //GameObject currentbullet = Instantiate(proyectile, AttackPoint.position, Quaternion.identity);
+
+            rb.GetComponent<Rigidbody>().AddForce(transform.up * upwardForce, ForceMode.Impulse);
+
         }
 
     }
