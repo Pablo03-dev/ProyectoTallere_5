@@ -22,7 +22,7 @@ public class Seguir : MonoBehaviour
     private void Update()
     {
         navMeshAgent.SetDestination(objetivo.position);
-        //transform.LookAt(objetivo);
+        transform.LookAt(objetivo);
     }
 
 }
