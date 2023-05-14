@@ -8,6 +8,7 @@ TagManager:
   - Melee
   - Enemigo
   - Bala
+  - Aliado
   layers:
   - Default
   - TransparentFX
