@@ -18,9 +18,17 @@ public class Restaurarhp : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Player")
+    //    {
+    //        GameManager.manager.RestaurarHp(sanar);
+    //    }
+    //}
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             GameManager.manager.RestaurarHp(sanar);
         }
