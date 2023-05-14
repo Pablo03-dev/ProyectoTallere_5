@@ -29,7 +29,7 @@ public class ShootSystem : MonoBehaviour
     public float recoilForece;
 
     //Graphics
-    //public GameObject muzzleFlash;
+    public GameObject muzzleFlash;
     public TextMeshProUGUI ammoDisplay;
 
     //private ObjectPool<Balaplayer> bulletPool;
@@ -124,8 +124,8 @@ public class ShootSystem : MonoBehaviour
         
 
         //Instacia flash si es que tiene
-        //if (muzzleFlash)
-            //Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        if (muzzleFlash)
+            Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
         bulletsLeft--;
         bulletsShot++;

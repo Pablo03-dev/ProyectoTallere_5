@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HPSystem : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class HPSystem : MonoBehaviour
 	[SerializeField] private int health = 3;
 	[SerializeField] private int maxHealth = 3;
 
+	public Slider barraHP;
 
 	[SerializeField] private bool haveToDrop;
 	[SerializeField] private GameObject objectToDrop1;
@@ -48,6 +50,7 @@ public class HPSystem : MonoBehaviour
 	public void TakeHealth(int amount)
     {
 		health -= amount;
+		
 
 		if (health <= 0)
 		{
@@ -57,6 +60,8 @@ public class HPSystem : MonoBehaviour
 
 	public void ModifyHealth(int amount)
 	{
+		barraHP.value = health;
+
 		if (health + amount > maxHealth)
 		{
 			amount = maxHealth - health;

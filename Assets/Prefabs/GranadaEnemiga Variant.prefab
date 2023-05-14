@@ -220,6 +220,31 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &380470523856486391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216985906168099843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f2e96caa67d4d47b2ad1fc8104eb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2888704426281999588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216985906168099843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13492f8b72ec4a4781039cc2f4907f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "da\xF1o": 10
 --- !u!114 &3130428802257153419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6758539732955476755}
-  explosion: {fileID: 0}
+  explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
@@ -245,3 +270,16 @@ MonoBehaviour:
   maxCollisions: 2
   maxLifetime: 5
   explodeOnTouch: 1
+--- !u!114 &7956213997446458861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216985906168099843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dba457c8d053e4789c4b2a2a084755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoVida: 2

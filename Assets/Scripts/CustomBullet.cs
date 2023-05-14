@@ -77,7 +77,11 @@ public class CustomBullet : MonoBehaviour
 
         collisions++;
 
-        if (collision.collider.CompareTag("Enemigo") && explodeOnTouch) Explode();
+        if (collision.collider.CompareTag("Enemigo") && explodeOnTouch)
+        {
+            Explode();
+            //HPSystem.
+        } 
 
         //if (collision.collider.CompareTag("Player") && explodeOnTouch) Explode();
 

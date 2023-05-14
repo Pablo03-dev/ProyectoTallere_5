@@ -232,6 +232,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &-8278150582044464453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9043246236286861069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd34aec59ed9be74ab3ecbcf042731fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChange: -10
 --- !u!114 &320819066006671764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4733707466068351197}
-  explosion: {fileID: 0}
+  explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 512
