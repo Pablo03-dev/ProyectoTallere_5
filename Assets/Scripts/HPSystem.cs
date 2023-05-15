@@ -31,13 +31,13 @@ public class HPSystem : MonoBehaviour
    //     }
    // }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-		if (collision.gameObject.CompareTag("Objetivo"))
-		{
-			Destroy(this.gameObject);
-		}
-	}
+ //   private void OnTriggerEnter2D(Collider2D collision)
+ //   {
+	//	if (collision.gameObject.CompareTag("Objetivo"))
+	//	{
+	//		Destroy(this.gameObject);
+	//	}
+	//}
 
     public void PlusHealth(int amount)
 	{
@@ -50,10 +50,11 @@ public class HPSystem : MonoBehaviour
 	public void TakeHealth(int amount)
     {
 		health -= amount;
-		
+		Debug.Log("Auch");
 
 		if (health <= 0)
 		{
+
 			Destroy(gameObject);
 		}
 	}
@@ -61,10 +62,11 @@ public class HPSystem : MonoBehaviour
 	public void ModifyHealth(int amount)
 	{
 		barraHP.value = health;
-
+		Debug.Log("Auch");
 		if (health + amount > maxHealth)
 		{
 			amount = maxHealth - health;
+			
 		}
 
 		health += amount;

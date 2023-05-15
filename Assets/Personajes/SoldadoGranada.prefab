@@ -810,7 +810,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: caba0ac103af9194e8fd18bb89d879b5, type: 2}
     - target: {fileID: 919132149155446097, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Name
-      value: SoldadoEnemigo
+      value: SoldadoGranada
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Layer
@@ -1144,14 +1144,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
-  timeBetweenAttacks: 1
+  walkPointRange: 0
+  timeBetweenAttacks: 1.9
   proyectile: {fileID: 4146628453938512670, guid: 07b065bcb117f16439ea1902602564bd, type: 3}
-  upwardForce: 0
-  shootForce: 35
+  upwardForce: 8
+  shootForce: 11
   AttackPoint: {fileID: 3669746383212185824}
-  sightRange: 8.51
-  attackRange: 8.73
+  sightRange: 12
+  attackRange: 12
   playerInSightRange: 0
   PlayerInAttackRange: 0
 --- !u!195 &7011678127296499177
