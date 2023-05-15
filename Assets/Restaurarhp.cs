@@ -31,6 +31,7 @@ public class Restaurarhp : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameManager.manager.RestaurarHp(sanar);
+            Destroy(gameObject);
         }
     }
 }

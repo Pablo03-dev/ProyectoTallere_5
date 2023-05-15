@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52a7d200136efe648a9ec9b4da2bf654, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9582
+      value: 3.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52a7d200136efe648a9ec9b4da2bf654, type: 3}
       propertyPath: m_LocalPosition.z
@@ -128,3 +128,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sanar: 10
+--- !u!65 &5728891275974964296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169674958474895816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9688932, z: 1}
+  m_Center: {x: 0, y: 0.37731493, z: 0}

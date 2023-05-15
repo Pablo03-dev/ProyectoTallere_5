@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
     {
         //GameManager.manager.RestaurarVidas();
 
-        vidas -= sanar;
+        vidas += sanar;
         barrahp.value = vidas;
     }
 
