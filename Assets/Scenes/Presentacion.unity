@@ -745,7 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempo_start: 0
-  tiempo_end: 10
+  tiempo_end: 8
   sceneIndex: 2
 --- !u!4 &1628937647
 Transform:
