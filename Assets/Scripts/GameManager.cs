@@ -62,8 +62,8 @@ public class GameManager : MonoBehaviour
     {
         vidas -= restarhp;
         barrahp.value = vidas;
-
-        if(vidas < 1)
+        Audiomanager.PlaySound("Daño");
+        if (vidas < 1)
         {
             GameOver();
             //Over.Show();

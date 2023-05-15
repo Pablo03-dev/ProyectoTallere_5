@@ -25,16 +25,20 @@ public class WeaponController : MonoBehaviour
     {
         if (Input.GetKey(inGun))
         {
+            //Audiomanager.PlaySound("Usagun");
             enPistola?.Invoke();
+            
         }
 
         if (Input.GetKey(inGrenade))
         {
+            //Audiomanager.PlaySound("UsaGranda");
             enGranada?.Invoke();
         }
 
         if (Input.GetKey(inKnife))
         {
+
             enCuchillo?.Invoke();
         }
     }

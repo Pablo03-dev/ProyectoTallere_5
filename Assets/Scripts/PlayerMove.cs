@@ -71,6 +71,16 @@ public class PlayerMove : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+
+        if (Input.GetKey(KeyCode.T))
+        {
+            Audiomanager.PlaySound("Atacar");
+        }
+
+        if (Input.GetKey(KeyCode.G))
+        {
+            Audiomanager.PlaySound("Ataquen");
+        }
     }
 
     private void MovePlayer()

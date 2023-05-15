@@ -96,6 +96,7 @@ public class AllyScript : MonoBehaviour
         if (!alreadyAttacked)
         {
             //Attack code aqui
+            Audiomanager.PlaySound("Disparo");
             Rigidbody rb = Instantiate(proyectile, AtackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 30f, ForceMode.Impulse);
             rb.AddForce(transform.up * 1f, ForceMode.Impulse);

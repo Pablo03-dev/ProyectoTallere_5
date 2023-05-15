@@ -36,7 +36,10 @@ public class CustomBullet : MonoBehaviour
     private void Update()
     {
         //When to explode:
-        if (collisions > maxCollisions) Explode();
+        if (collisions > maxCollisions)
+        {
+            Explode();
+        }
 
         //countdown lifetime
         maxLifetime -= Time.deltaTime;
@@ -48,6 +51,7 @@ public class CustomBullet : MonoBehaviour
     {
         //Instancia expllosion
         if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
+        Audiomanager.PlaySound("Explosion");
 
         //revisa si hay enemigos
         Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);

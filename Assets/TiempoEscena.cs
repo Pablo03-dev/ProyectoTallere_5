@@ -8,7 +8,7 @@ public class TiempoEscena : MonoBehaviour
     public float tiempo_start;
     public float tiempo_end;
 
-    public int sceneIndex = 0;
+    public int sceneIndex;
 
     // Start is called before the first frame update
     void Start()

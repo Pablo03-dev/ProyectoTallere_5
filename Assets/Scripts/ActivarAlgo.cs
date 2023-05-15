@@ -18,6 +18,7 @@ public class ActivarAlgo : MonoBehaviour
     {
         if (Input.GetKey(ActivarKey))
         {
+            //Audiomanager.PlaySound("Atacar");
             Presionado?.Invoke();
         }
 

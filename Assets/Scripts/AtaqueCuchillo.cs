@@ -17,6 +17,7 @@ public class AtaqueCuchillo : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            Audiomanager.PlaySound("cortocuchillo");
             anim.SetBool("Atacando", true);
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))

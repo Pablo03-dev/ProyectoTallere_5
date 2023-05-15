@@ -83,7 +83,7 @@ public class ShootSystem : MonoBehaviour
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = 0;
-
+            Audiomanager.PlaySound("Disparo");
             Shoot();
         }
     }

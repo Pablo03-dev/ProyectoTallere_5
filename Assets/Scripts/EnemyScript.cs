@@ -100,6 +100,7 @@ public class EnemyScript : MonoBehaviour
         {
             //Attack code aqui
             Rigidbody rb = Instantiate(proyectile, AttackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Audiomanager.PlaySound("Disparo");
             rb.AddForce(transform.forward * shootForce, ForceMode.Impulse);
             rb.AddForce(transform.up * 1f, ForceMode.Impulse);
 

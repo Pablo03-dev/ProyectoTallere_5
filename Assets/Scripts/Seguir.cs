@@ -23,6 +23,11 @@ public class Seguir : MonoBehaviour
     {
         navMeshAgent.SetDestination(objetivo.position);
         transform.LookAt(objetivo);
+
+        //if (Input.GetKey(KeyCode.T))
+        //{
+        //    Audiomanager.PlaySound("Atacar");
+        //}
     }
 
 }
