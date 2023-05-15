@@ -807,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 290328960394470795, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: caba0ac103af9194e8fd18bb89d879b5, type: 2}
+      objectReference: {fileID: 2100000, guid: 20fe23a543e2f8e4b85e8fe414d25959, type: 2}
     - target: {fileID: 919132149155446097, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Name
       value: SoldadoGranada
@@ -899,7 +899,7 @@ PrefabInstance:
     - target: {fileID: 3577897090704119000, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: caba0ac103af9194e8fd18bb89d879b5, type: 2}
+      objectReference: {fileID: 2100000, guid: 20fe23a543e2f8e4b85e8fe414d25959, type: 2}
     - target: {fileID: 3927375542878814639, guid: 2158b335b809cd14da485762d8f2fa49, type: 3}
       propertyPath: m_Layer
       value: 9
