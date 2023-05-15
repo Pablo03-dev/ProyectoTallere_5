@@ -17,6 +17,8 @@ public class CustomBullet : MonoBehaviour
     //Damage
     public int explosionDamage;
 
+    public bool touchWall = false;
+
     public float explosionRange;
     public float explosionForce;
 
@@ -24,6 +26,8 @@ public class CustomBullet : MonoBehaviour
     public int maxCollisions;
     public float maxLifetime;
     public bool explodeOnTouch = true;
+
+
 
     int collisions;
     PhysicMaterial physics_mat;
@@ -36,7 +40,12 @@ public class CustomBullet : MonoBehaviour
     private void Update()
     {
         //When to explode:
-        if (collisions > maxCollisions)
+        //if (collisions > maxCollisions)
+        //{
+        //    Explode();
+        //}
+
+        if (touchWall == true)
         {
             Explode();
         }
@@ -89,7 +98,11 @@ public class CustomBullet : MonoBehaviour
 
         //if (collision.collider.CompareTag("Player") && explodeOnTouch) Explode();
 
-        //if (collision.collider.CompareTag("Piso") && explodeOnTouch) Explode();
+        if (collision.collider.CompareTag("Piso") && explodeOnTouch)
+        {
+            touchWall = true;
+            Explode();
+        } 
 
     }
 

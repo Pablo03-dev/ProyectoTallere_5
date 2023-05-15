@@ -25,5 +25,10 @@ public class ActivadorSimple : MonoBehaviour
         {
             Cortado?.Invoke();
         }
+
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+        //    Cortado?.Invoke();
+        //}
     }
 }

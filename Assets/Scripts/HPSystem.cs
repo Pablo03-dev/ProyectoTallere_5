@@ -50,7 +50,8 @@ public class HPSystem : MonoBehaviour
 	public void TakeHealth(int amount)
     {
 		health -= amount;
-		Debug.Log("Auch");
+        Audiomanager.PlaySound("Daño");
+        Debug.Log("Auch");
 
 		if (health <= 0)
 		{
@@ -62,7 +63,8 @@ public class HPSystem : MonoBehaviour
 	public void ModifyHealth(int amount)
 	{
 		barraHP.value = health;
-		Debug.Log("Auch");
+        Audiomanager.PlaySound("Daño");
+        Debug.Log("Auch");
 		if (health + amount > maxHealth)
 		{
 			amount = maxHealth - health;
