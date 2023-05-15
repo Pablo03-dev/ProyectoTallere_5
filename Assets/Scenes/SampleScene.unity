@@ -6541,7 +6541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 233923969}
-  enemy: {fileID: 0}
+  enemy: {fileID: 1451601213}
   healt: 5
   whatIsGround:
     serializedVersion: 2
@@ -58973,7 +58973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2078728373}
-  enemy: {fileID: 0}
+  enemy: {fileID: 1787515585}
   healt: 5
   whatIsGround:
     serializedVersion: 2
